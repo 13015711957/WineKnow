@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/headline_tab"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_headline_selector"
+            android:text="头条" />
+        <RadioButton
+            android:id="@+id/know_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_know_selector"
+            android:text="知道" />
+
+        <RadioButton
+            android:id="@+id/consult_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_consult_selector"
+            android:text="咨询" />
+
+
+        <RadioButton
+            android:id="@+id/manage_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_manage_selector"
+            android:text="经营" />
+
+        <RadioButton
+            android:id="@+id/data_tab"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_data_selector"
+            android:text="数据" />
+    </RadioGroup>
+
+
+</RelativeLayout>

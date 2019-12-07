@@ -1,0 +1,4 @@
+
+|squid:S14887"`Immediately return this expression instead of assigning it to the temporary variable "rootView".(–¥äûÿÿÿÿ
+wsquid:S1450"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ
+Lsquid:S1068"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ

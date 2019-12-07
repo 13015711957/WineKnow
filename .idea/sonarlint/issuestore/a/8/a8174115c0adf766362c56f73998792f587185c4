@@ -1,0 +1,5 @@
+
+ƒsquid:S14889"`Immediately return this expression instead of assigning it to the temporary variable "rootView".(½°¨†úÿÿÿÿ8Ô²ïúí-
+Nsquid:UselessImportCheck	"Remove this duplicated import.(‚Š©“ùÿÿÿÿ8Ô²ïúí-
+~squid:S1450"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ8Ô²ïúí-
+Ssquid:S1068"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8Ô²ïúí-
