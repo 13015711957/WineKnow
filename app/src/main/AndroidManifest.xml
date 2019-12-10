@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wine">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +21,9 @@
         </activity>
         <activity
             android:name=".HeadlineFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArticleDetailActivity"
             android:screenOrientation="portrait" />
     </application>
 

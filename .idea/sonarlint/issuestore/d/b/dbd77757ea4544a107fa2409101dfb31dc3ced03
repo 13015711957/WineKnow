@@ -1,6 +1,7 @@
 
-{squid:S1450 "]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8õÁ¯úí-
-’squid:UselessImportCheck"bRemove this unused import 'com.google.android.material.floatingactionbutton.FloatingActionButton'.(ôˆêãÿÿÿÿÿ8‹Û¬úí-
-usquid:UselessImportCheck"JRemove this unused import 'com.google.android.material.snackbar.Snackbar'.(ë„ƒŠ8‹Û¬úí-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±8‹Û¬úí-
-Rsquid:S1905L"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8‹Û¬úí-
+^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8ÛÛ«ƒî-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±8üËî-
+Rsquid:S1905K"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8üËî-
+{squid:S1450"]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8üËî-
+Osquid:S1068 ",Remove this unused "fManager" private field.(£–ˆˆÿÿÿÿÿ8üËî-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8ÛÛ«ƒî-

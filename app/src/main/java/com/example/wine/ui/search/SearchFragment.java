@@ -1,10 +1,16 @@
 package com.example.wine.ui.search;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -14,22 +20,38 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.wine.R;
 
+import java.util.ArrayList;
+
 public class SearchFragment extends Fragment {
 
-    private SearchViewModel searchViewModel;
+    private SearchView mSearchView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        searchViewModel =
-                ViewModelProviders.of(this).get(SearchViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_search, container, false);
-        final TextView textView = root.findViewById(R.id.text_search);
-        searchViewModel.getText().observe(this, new Observer<String>() {
+        mSearchView = (SearchView) root.findViewById(R.id.searchView);
+        mSearchView.setSubmitButtonEnabled(true);
+
+
+        // 设置搜索文本监听
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            // 当点击搜索按钮时触发该方法
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public boolean onQueryTextSubmit(String query) {
+                Toast.makeText(getContext(), query, Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            // 当搜索内容改变时触发该方法
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                return false;
             }
         });
+
         return root;
     }
+
 }
