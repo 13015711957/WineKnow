@@ -152,3 +152,11 @@ e
 5app/src/main/java/com/example/wine/Util/Province.java,7\b\7b3bee7d24657033281e4dda1071d2fb16443cfd
 e
 5app/src/main/java/com/example/wine/Util/HttpUtil.java,2\8\285ac69387d8d631625465f12c6b2c1192b551c0
+c
+3app/src/main/java/com/example/wine/itemAdapter.java,2\6\262cc75611a99b97d12b514a85ae3f29135e1769
+e
+5app/src/main/java/com/example/wine/Bean/WineBean.java,0\7\07872a44fd7eaf17f584d1eb570dfafe8e2f6d4e
+k
+;app/src/main/java/com/example/wine/Util/DatabaseHelper.java,f\4\f45ddb8cff5be98272a750fdd150754ad7bc3cd2
+m
+=app/src/main/java/com/example/wine/ArticleDetailActivity.java,8\4\840dbd49d727aa99440b876c938f5be72189d0ce

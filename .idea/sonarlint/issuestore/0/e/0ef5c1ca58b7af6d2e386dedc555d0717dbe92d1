@@ -1,4 +1,9 @@
 
-|squid:S14887"`Immediately return this expression instead of assigning it to the temporary variable "rootView".(–¥äûÿÿÿÿ
-Lsquid:S1068"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ
-wsquid:S1450"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ
+Ssquid:S1068&"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8—Ÿ‹€ï-
+`squid:UselessImportCheck"5Remove this unused import 'org.jsoup.nodes.Document'.(ô¯É8Ù¯€ï-
+asquid:UselessImportCheck"6Remove this unused import 'org.jsoup.select.Elements'.(ëÂè8Ù¯€ï-
+\squid:UselessImportCheck",Remove this unused import 'org.jsoup.Jsoup'.(Ù±šªûÿÿÿÿ8Ù¯€ï-
+esquid:UselessImportCheck":Remove this unused import 'android.content.ContentValues'.(å’µŞ8Ù¯€ï-
+Msquid:S00108Z")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8¶ĞÓ‚ï-
+|squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãİòùúÿÿÿÿ8ıüéıî-
+~squid:S1450&"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ8—Ÿ‹€ï-

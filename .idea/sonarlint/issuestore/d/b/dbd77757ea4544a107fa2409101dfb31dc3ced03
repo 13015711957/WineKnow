@@ -1,7 +1,7 @@
 
-^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8ÛÛ«ƒî-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž8üËî-
-Rsquid:S1905K"/Remove this unnecessary cast to "DrawerLayout".(ÐÍè¨þÿÿÿÿ8üËî-
-{squid:S1450"]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8üËî-
-Osquid:S1068 ",Remove this unused "fManager" private field.(£–ˆˆÿÿÿÿÿ8üËî-
-]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ð‹G8ÛÛ«ƒî-
+|squid:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãÝòùúÿÿÿÿ8‘©Œ€ï-
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ð©‰íûÿÿÿÿ8ä¤ˆ€ï-
+Rsquid:S1905U"/Remove this unnecessary cast to "DrawerLayout".(ÐÍè¨þÿÿÿÿ8¾’¡þî-
+rsquid:UselessImportCheck"BRemove this unused import 'androidx.fragment.app.FragmentManager'.(¯­ë‹ýÿÿÿÿ8ã£Š€ï-
+lsquid:MaximumInheritanceDepth$"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž8üËî-
+{squid:S1450'"]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8üËî-

@@ -1,0 +1,8 @@
+
+jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ÿí¶ßÿÿÿÿÿ
+osquid:S1450"XRemove the "imageView" field and declare it as a local variable in the relevant methods.(øû¯
+ksquid:S1450"TRemove the "infor" field and declare it as a local variable in the relevant methods.(¸ÌÄ×
+osquid:S1450"SRemove the "wine" field and declare it as a local variable in the relevant methods.(óä¥àÿÿÿÿÿ
+jsquid:S1450"SRemove the "type" field and declare it as a local variable in the relevant methods.(¯ò»
+osquid:S1450"SRemove the "name" field and declare it as a local variable in the relevant methods.(©ÏßŽûÿÿÿÿ
+ksquid:S1450"TRemove the "price" field and declare it as a local variable in the relevant methods.(šØ‘Û

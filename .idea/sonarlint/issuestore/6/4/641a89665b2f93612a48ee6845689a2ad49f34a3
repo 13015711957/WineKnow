@@ -1,0 +1,12 @@
+
+hsquid:UselessImportCheck	"8Remove this unused import 'android.widget.ArrayAdapter'.( €ŠÑÿÿÿÿÿ8ãƒÇ¯î-
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8×Áí®î-
+_squid:UselessImportCheck
+"4Remove this unused import 'android.widget.ListView'.(Œ‰Ö×8•ôÇ¯î-
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8°·Ç¯î-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8­©«®î-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÍÛÇ®î-
+rsquid:UselessImportCheck"BRemove this unused import 'androidx.lifecycle.ViewModelProviders'.(ê· ºÿÿÿÿÿ8³ñÅ®î-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8± Æ®î-
+xsquid:S1450"ZRemove the "mSearchView" field and declare it as a local variable in the relevant methods.(ß²ú8¨•±®î-
+csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8–è¯î-
