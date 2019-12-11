@@ -9,14 +9,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.wine.Bean.WineBean;
+import com.example.wine.Bean.NewBean;
+
 
 import java.util.ArrayList;
 
-public class itemAdapter extends BaseAdapter {
-    public static ArrayList<WineBean> list;
+public class NewsAdapter extends BaseAdapter {
+    public static ArrayList<NewBean> list;
     private Context context;
-    public itemAdapter(ArrayList<WineBean> list, Context context)
+    public NewsAdapter(ArrayList<NewBean> list, Context context)
     {
         this.context=context;
         this.list=list;
@@ -51,9 +52,9 @@ public class itemAdapter extends BaseAdapter {
         }
         viewHolder= (ViewHolder) convertView.getTag();
         Glide.with(context).load(list.get(position).getImgurl()).into(viewHolder.imageView);//Glide 加载图片
-        viewHolder.name.setText(list.get(position).getName());
-        viewHolder.type.setText(list.get(position).getType());
-        viewHolder.price.setText(list.get(position).getPrice());
+        viewHolder.name.setText(list.get(position).getTitle());
+        viewHolder.type.setText(list.get(position).getTime());
+        viewHolder.price.setText("新闻");
         return convertView;
     }
     class ViewHolder

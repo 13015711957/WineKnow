@@ -1,7 +1,6 @@
 package com.example.wine;
 
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,9 +17,6 @@ import androidx.fragment.app.Fragment;
 import com.example.wine.Bean.WineBean;
 import com.example.wine.Util.DatabaseHelper;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 

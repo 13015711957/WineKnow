@@ -16,6 +16,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.wine.Bean.WineBean;
+import com.example.wine.Util.DataRequestUtil;
 import com.example.wine.Util.DatabaseHelper;
 import com.google.android.material.navigation.NavigationView;
 
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private RadioGroup mTabRadioGroup;
     private SparseArray<Fragment> mFragmentSparseArray;
-    private ArrayList<WineBean> wineBeans=new ArrayList<WineBean>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,62 +120,8 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
-                    String url="http://list.yesmywine.com/";
-                    Document doc= Jsoup.connect(url).get();
-                    Elements goods=doc.select("[data-dts=\"L201\"]");
-                    ArrayList<String> hrefs=new ArrayList<String>();
-
-                    for(int i=0;i<goods.size();i++)
-                    {
-                        WineBean wineBean=new WineBean();
-                        String href=goods.get(i).select("a").attr("href");
-                        href="http:"+href;
-                        hrefs.add(href);
-                        String price=goods.get(i).select("p.price").text();
-                        String imgurl=goods.get(i).select("img").attr("original");
-                        wineBean.setImgurl(imgurl);
-                        wineBean.setPrice(price);
-                        wineBeans.add(wineBean);
-
-                    }
-                    for (int i=0;i<hrefs.size();i++)
-                    {
-                        Document document=Jsoup.connect(hrefs.get(i)).get();
-                        String id=document.select("div.temperature.clearfix").select("span").text();
-                        wineBeans.get(i).setId(id);
-                        Elements temp=document.select("div.xiangqing");
-                        String type=temp.select("span.zonglei").attr("title");
-                        String infor=temp.select("span").text();
-                        wineBeans.get(i).setType(type);
-                        wineBeans.get(i).setInfor(infor);
-                        Elements temp1=document.select("div.crumb");
-                        String name=temp1.select("strong").text();
-                        wineBeans.get(i).setName(name);
-
-                    }
-                    for (int i=0;i<wineBeans.size();i++)
-                    {
-                        WineBean wine =wineBeans.get(i);
-                        Log.e("wine",wineBeans.get(i).toString());
-                        //依靠DatabaseHelper带全部参数的构造函数创建数据库
-                        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this, "test.db",null,1);
-                        SQLiteDatabase db = dbHelper.getWritableDatabase();
-                        Log.e("db",db.getPath());
-                        ContentValues values = new ContentValues();
-                        values.put("id",wine.getId());
-                        values.put("name",wine.getName());
-                        values.put("type",wine.getType());
-                        values.put("price",wine.getPrice());
-                        values.put("infor",wine.getInfor());
-                        values.put("imgurl",wine.getImgurl());
-                        db.insert("wines",null,values);
-                    }
-
-
-                }catch (Exception e){
-                    Log.d("main","error...");
-                }
+                DataRequestUtil.getWineData(MainActivity.this);
+                DataRequestUtil.getNewsData(MainActivity.this);
             }
 
         }).start();

@@ -14,6 +14,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE wines(id varchar(20) PRIMARY KEY ,name varchar(20),type varchar(20),price varchar(10),infor text,imgurl text)";
         db.execSQL(sql);
+        String sql1= "CREATE TABLE News(title varchar(50),time varchar(20)PRIMARY KEY,content text,imgurl text,url text)";
+        db.execSQL(sql1);
     }
 
     @Override
