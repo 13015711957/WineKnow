@@ -80,9 +80,23 @@ public class DataRequestUtil {
         }
     }
     public static void getNewsData(Context context){
+        String url="http://www.jianiang.cn/hangye/";
+        String type="新闻";
+        getData(url,context,type);
+    }
+    public static void getConsultData(Context context){
+        String url="http://www.jianiang.cn/jiuwenhua/";
+        String type="酒文化";
+        getData(url,context,type);
+    }
+    public static void getManageData(Context context){
+        String url="http://www.jianiang.cn/yingxiao/";
+        String type="营销";
+        getData(url,context,type);
+    }
+    public static void getData(String home_url,Context context,String type){
         ArrayList<NewBean> newBeans=new ArrayList<NewBean>();
         try {
-            String home_url="http://www.jianiang.cn/hangye/";
             Document doc= Jsoup.connect(home_url).get();
             Elements ul=doc.select("ul.e2");
             Elements news=ul.select("li");
@@ -93,13 +107,14 @@ public class DataRequestUtil {
                 String content=news.get(i).select("p.intro").text();
                 String imgurl=news.get(i).select("img").attr("src");
                 String url=news.get(i).select("a.preview").attr("href");
-                NewBean newBean=new NewBean(title,time,content,imgurl,url);
+                NewBean newBean=new NewBean(title,type,time,content,imgurl,url);
                 newBeans.add(newBean);
                 //Log.e("news",newBean.toString());
                 DatabaseHelper dbHelper = new DatabaseHelper(context, "test.db",null,1);
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 ContentValues values = new ContentValues();
                 values.put("title",title);
+                values.put("type",type);
                 values.put("time",time);
                 values.put("content",content);
                 values.put("imgurl",imgurl);
@@ -107,9 +122,8 @@ public class DataRequestUtil {
                 db.insert("News",null,values);
 
             }
-
         }catch (IOException e){
-            Log.e("newsdata","error......");
+
         }
 
     }

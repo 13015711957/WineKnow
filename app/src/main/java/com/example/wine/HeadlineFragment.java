@@ -92,12 +92,13 @@ public class HeadlineFragment extends Fragment {
             try {
                 DatabaseHelper dbHelper = new DatabaseHelper(getActivity(), "test.db",null,1);
                 SQLiteDatabase db = dbHelper.getReadableDatabase();
-                Cursor cursor = db.query("News", null, null, null, null, null, null, null);
+                Cursor cursor = db.query("News", null, "type=?", new String[]{"新闻"}, null, null, null, null);
                 if (cursor.moveToFirst())
                 {
                     do {
                         NewBean newBean=new NewBean();
                         newBean.setTitle(cursor.getString(cursor.getColumnIndex("title")));
+                        newBean.setType(cursor.getString(cursor.getColumnIndex("type")));
                         newBean.setTime(cursor.getString(cursor.getColumnIndex("time"))); ;
                         newBean.setContent(cursor.getString(cursor.getColumnIndex("content")));
                         newBean.setUrl(cursor.getString(cursor.getColumnIndex("url")));

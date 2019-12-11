@@ -2,6 +2,7 @@ package com.example.wine.Bean;
 
 public class NewBean {
     private String title;
+    private String type;
     private String time;
     private String content;
     private String imgurl;
@@ -9,8 +10,9 @@ public class NewBean {
     public NewBean() {
     }
 
-    public NewBean(String title, String time, String content, String imgurl, String url) {
+    public NewBean(String title, String type, String time, String content, String imgurl, String url) {
         this.title = title;
+        this.type = type;
         this.time = time;
         this.content = content;
         this.imgurl = imgurl;
@@ -57,10 +59,19 @@ public class NewBean {
         this.url = url;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "NewBean{" +
-                ", title='" + title + '\'' +
+                "title='" + title + '\'' +
+                ", type='" + type + '\'' +
                 ", time='" + time + '\'' +
                 ", content='" + content + '\'' +
                 ", imgurl='" + imgurl + '\'' +

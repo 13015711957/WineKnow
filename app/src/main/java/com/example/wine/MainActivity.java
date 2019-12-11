@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 DataRequestUtil.getWineData(MainActivity.this);
                 DataRequestUtil.getNewsData(MainActivity.this);
+                DataRequestUtil.getConsultData(MainActivity.this);
+                DataRequestUtil.getManageData(MainActivity.this);
             }
 
         }).start();

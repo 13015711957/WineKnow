@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,17 +9,180 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <ImageView
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="400px"
-            android:src="@mipmap/data1"></ImageView>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400px"
-            android:src="@mipmap/data2"></ImageView>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400px"
-            android:src="@mipmap/data3"></ImageView>
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/data_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2019年中国酿酒行业总体分析及白酒、啤酒、黄酒、葡萄酒四大酒类产量情况统计"
+                        android:textColor="#000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2012-2018年中国酿酒行业企业销售收入分析" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data1" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2012-2018年中国酿酒行业企业利润总额分析" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data2" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1、 白酒行业产量情况 \n   近几年，白酒产量呈下降趋势，从2016年的135.84亿升下降到2018年的87.12亿升.20178年同比下降达到11.80%。\n\n2004-2018年白酒产量及增长情况 " />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data3" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2018年中国及重点省市白酒产量统计" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data4" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2、 啤酒产量情况\n   2013年啤酒产量达到506.2亿升。此后啤酒产量逐年下降。2018年，全国啤酒产量381.2亿升，同比下降13.38%。\n\n
+
+2012-2018年中国啤酒产量增长性" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data5" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2018年中国及重点省市啤酒产量统计 单位：千升" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data6" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3、 黄酒生产情况\n2017年全国黄酒产量340.1万千升；2018年，全国黄酒产量334.8万千升，同比下降1.56%。
+
+\n\n2009-2018年黄酒产量增长性" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data7" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2018年中国及重点省市黄酒产量集中度" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data8" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="4、 葡萄酒产量情况\n2018年葡萄酒产量呈下降趋势，2018年葡萄酒产量为62.9万千升，同比下降37.16%。\n\n
+2010-2018年中国葡萄酒产量及增速" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data9" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2018年重点省市葡萄酒产量集中度" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:src="@mipmap/img_data10" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 </FrameLayout>

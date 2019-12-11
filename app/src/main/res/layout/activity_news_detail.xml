@@ -3,16 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/tv_back"
-        android:text="返回"
-        android:textSize="18sp"
-        android:textColor="#000"
-        android:paddingLeft="15dp"
-        android:gravity="center_vertical"
-        android:background="#fff"/>
+
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

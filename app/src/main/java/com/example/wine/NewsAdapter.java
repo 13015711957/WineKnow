@@ -1,6 +1,7 @@
 package com.example.wine;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,8 +54,10 @@ public class NewsAdapter extends BaseAdapter {
         viewHolder= (ViewHolder) convertView.getTag();
         Glide.with(context).load(list.get(position).getImgurl()).into(viewHolder.imageView);//Glide 加载图片
         viewHolder.name.setText(list.get(position).getTitle());
-        viewHolder.type.setText(list.get(position).getTime());
-        viewHolder.price.setText("新闻");
+        String[] str=list.get(position).getTime().split(" ");
+        String[] str1=str[0].split("：");
+        viewHolder.type.setText(str1[1]);
+        viewHolder.price.setText(list.get(position).getType());
         return convertView;
     }
     class ViewHolder
