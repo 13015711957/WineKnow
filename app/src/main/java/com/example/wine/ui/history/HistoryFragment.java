@@ -29,6 +29,7 @@ import com.example.wine.Util.DatabaseHelper;
 import com.example.wine.Util.Util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HistoryFragment extends Fragment {
 
@@ -104,6 +105,7 @@ public class HistoryFragment extends Fragment {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                Collections.reverse(favoriteItems);
                 listView.setAdapter(new HistoryAdapter(favoriteItems,getContext()));
             }
         });
