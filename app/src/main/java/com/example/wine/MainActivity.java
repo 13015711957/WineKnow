@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-
         } else {
             super.onBackPressed();
         }
@@ -121,8 +120,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 DataRequestUtil.getWineData(MainActivity.this);
+            }
+
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
                 DataRequestUtil.getNewsData(MainActivity.this);
+            }
+
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
                 DataRequestUtil.getConsultData(MainActivity.this);
+            }
+
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
                 DataRequestUtil.getManageData(MainActivity.this);
             }
 

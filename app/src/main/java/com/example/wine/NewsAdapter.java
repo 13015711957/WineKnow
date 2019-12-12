@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.wine.Bean.NewBean;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class NewsAdapter extends BaseAdapter {
@@ -51,13 +52,19 @@ public class NewsAdapter extends BaseAdapter {
             viewHolder.type= (TextView) convertView.findViewById(R.id.tv_article_list_type);
             convertView.setTag(viewHolder);
         }
-        viewHolder= (ViewHolder) convertView.getTag();
-        Glide.with(context).load(list.get(position).getImgurl()).into(viewHolder.imageView);//Glide 加载图片
-        viewHolder.name.setText(list.get(position).getTitle());
-        String[] str=list.get(position).getTime().split(" ");
-        String[] str1=str[0].split("：");
-        viewHolder.type.setText(str1[1]);
-        viewHolder.price.setText(list.get(position).getType());
+        try {
+            viewHolder= (ViewHolder) convertView.getTag();
+            Glide.with(context).load(list.get(position).getImgurl()).into(viewHolder.imageView);//Glide 加载图片
+            viewHolder.name.setText(list.get(position).getTitle());
+            String[] str=list.get(position).getTime().split(" ");
+            String[] str1=str[0].split("：");
+            viewHolder.type.setText(str1[1]);
+            viewHolder.price.setText(list.get(position).getType());
+        }
+        catch (Exception e){
+
+        }
+
         return convertView;
     }
     class ViewHolder

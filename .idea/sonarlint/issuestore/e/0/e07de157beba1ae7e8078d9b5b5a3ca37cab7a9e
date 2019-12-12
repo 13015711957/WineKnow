@@ -1,2 +1,11 @@
 
-vsquid:S1450"_Remove the "historyViewModel" field and declare it as a local variable in the relevant methods.(Æ ¦¤
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8ÓÙ‰Ïï-
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8ÓÙ‰Ïï-
+vsquid:S1450#"_Remove the "historyViewModel" field and declare it as a local variable in the relevant methods.(Æ ¦¤
+Msquid:S00108K")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8ú‹Ïï-
+psquid:S00117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜£€»8ú‹Ïï-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÓÙ‰Ïï-
+Ssquid:S1068&"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8ï“Ïï-
+nsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(Úö”èüÿÿÿÿ8½ÃÏï-
+Rsquid:S1068#"4Remove this unused "historyViewModel" private field.(Æ ¦¤8ÓÙ‰Ïï-
+|squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(—•ø–ùÿÿÿÿ8ï“Ïï-

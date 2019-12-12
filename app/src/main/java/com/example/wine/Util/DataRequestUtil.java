@@ -49,7 +49,12 @@ public class DataRequestUtil {
                 wineBeans.get(i).setId(id);
                 Elements temp=document.select("div.xiangqing");
                 String type=temp.select("span.zonglei").attr("title");
-                String infor=temp.select("span").text();
+                Elements temp2=temp.select("span");
+                String infor="";
+                for (int j=0;j<temp2.size();j++)
+                {
+                    infor=infor+temp2.get(j).text()+"\n";
+                }
                 wineBeans.get(i).setType(type);
                 wineBeans.get(i).setInfor(infor);
                 Elements temp1=document.select("div.crumb");
@@ -71,6 +76,7 @@ public class DataRequestUtil {
                 values.put("price",wine.getPrice());
                 values.put("infor",wine.getInfor());
                 values.put("imgurl",wine.getImgurl());
+                values.put("flag",wine.getFlag());
                 db.insert("wines",null,values);
             }
         }
@@ -119,6 +125,7 @@ public class DataRequestUtil {
                 values.put("content",content);
                 values.put("imgurl",imgurl);
                 values.put("url",url);
+                values.put("flag",0);
                 db.insert("News",null,values);
 
             }

@@ -12,14 +12,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE wines(id varchar(20) PRIMARY KEY ,name varchar(20),type varchar(20),price varchar(10),infor text,imgurl text)";
+        String sql = "CREATE TABLE wines(id varchar(20) PRIMARY KEY ,name varchar(20),type varchar(20),price varchar(10),infor text,imgurl text,flag Integer)";
         db.execSQL(sql);
-        String sql1= "CREATE TABLE News(title varchar(50),type varchar(20),time varchar(20)PRIMARY KEY,content text,imgurl text,url text)";
+        String sql1= "CREATE TABLE News(title varchar(50),type varchar(20),time varchar(20)PRIMARY KEY,content text,imgurl text,url text,flag Integer)";
         db.execSQL(sql1);
+        String sql2="CREATE TABLE Favs(title varchar(50),id varchar(20)PRIMARY KEY,time varchar(20),type Integer)";
+        db.execSQL(sql2);
+        String sql3="CREATE TABLE History(title varchar(50),id varchar(20)PRIMARY KEY, time varchar(20),type Integer)";
+        db.execSQL(sql3);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+
 }

@@ -16,9 +16,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.wine.Bean.WineBean;
 import com.example.wine.Util.DatabaseHelper;
+import com.example.wine.Util.Util;
 
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
@@ -74,9 +77,26 @@ public class KnowFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent=new Intent(getContext(),ArticleDetailActivity.class);
                 WineBean wine=itemAdapter.list.get(i);
+
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// HH:mm:ss
+                Date date = new Date(System.currentTimeMillis());
+                Util.insert_History(wine.getName(),wine.getId(),simpleDateFormat.format(date),0,getContext());
+
+                try {
+                    DatabaseHelper dbHelper = new DatabaseHelper(getContext(), "test.db",null,1);
+                    SQLiteDatabase db = dbHelper.getReadableDatabase();
+                    Cursor cursor = db.query("wines", null, "id=?", new String[]{wine.getId()}, null, null, null, null);
+                    while (cursor.moveToNext())
+                    {
+                        int x=cursor.getInt(cursor.getColumnIndex("flag"));
+                        wine.setFlag(x);
+                    }
+                }catch (Exception e){
+                    Log.e("<<<<<<<","error");
+                }
                 intent.putExtra("wine",wine);
                 startActivity(intent);
-                Log.e("wine",wine.toString());
+                //Log.e("wine",wine.toString());
             }
         });
         return rootView;
@@ -96,6 +116,8 @@ public class KnowFragment extends Fragment {
                 {
                     do {
                         WineBean wineBean=new WineBean();
+                        wineBean.setId(cursor.getString(cursor.getColumnIndex("id")));
+                        wineBean.setFlag(cursor.getInt(cursor.getColumnIndex("flag")));
                         wineBean.setName(cursor.getString(cursor.getColumnIndex("name")));
                         wineBean.setType(cursor.getString(cursor.getColumnIndex("type"))) ;
                         wineBean.setPrice(cursor.getString(cursor.getColumnIndex("price")));
@@ -105,11 +127,8 @@ public class KnowFragment extends Fragment {
                     } while (cursor.moveToNext());
 
                 }
-
-
-
             }catch (Exception e){
-                Log.d("main","error...");
+                Log.d("main>>>","error...");
             }
 
         }

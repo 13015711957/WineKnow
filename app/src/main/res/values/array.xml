@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_type">
+        <item>无法登入</item>
+        <item>用户过期</item>
+        <item>系统崩溃</item>
+    </string-array>
+</resources>

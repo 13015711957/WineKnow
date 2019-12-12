@@ -1,2 +1,12 @@
 
-}squid:S1450"aRemove the "favoritesViewModel" field and declare it as a local variable in the relevant methods.(è¶¢³ÿÿÿÿÿ
+Ssquid:S1068'"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8¬æÈï-
+Msquid:S00108L")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8õïøÎï-
+}squid:S1450$"aRemove the "favoritesViewModel" field and declare it as a local variable in the relevant methods.(è¶¢³ÿÿÿÿÿ
+|squid:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(—•ø–ùÿÿÿÿ8®«˜Êï-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8ÓÏÇï-
+dsquid:UselessImportCheck"9Remove this unused import 'com.example.wine.NewsAdapter'.(÷ï”8­¼ÿÉï-
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8ÓÏÇï-
+psquid:S00117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜£€»8õïøÎï-
+nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(Úö”èüÿÿÿÿ8õïøÎï-
+Ysquid:S1068$"6Remove this unused "favoritesViewModel" private field.(è¶¢³ÿÿÿÿÿ8ÓÏÇï-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÓÏÇï-

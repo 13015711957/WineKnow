@@ -1,6 +1,4 @@
 
-a
-1app/src/main/java/com/example/wine/SlideMenu.java,2\e\2ec288bca359611b2ef16269d06f38b40ecd7d67
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 l
@@ -148,10 +146,6 @@ A
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 ]
 -app/src/main/res/layout/fragment_feedback.xml,4\f\4fe703f286ec610322b19c91fbe26a63f73466a2
-e
-5app/src/main/java/com/example/wine/Util/Province.java,7\b\7b3bee7d24657033281e4dda1071d2fb16443cfd
-e
-5app/src/main/java/com/example/wine/Util/HttpUtil.java,2\8\285ac69387d8d631625465f12c6b2c1192b551c0
 c
 3app/src/main/java/com/example/wine/itemAdapter.java,2\6\262cc75611a99b97d12b514a85ae3f29135e1769
 e
@@ -160,3 +154,23 @@ k
 ;app/src/main/java/com/example/wine/Util/DatabaseHelper.java,f\4\f45ddb8cff5be98272a750fdd150754ad7bc3cd2
 m
 =app/src/main/java/com/example/wine/ArticleDetailActivity.java,8\4\840dbd49d727aa99440b876c938f5be72189d0ce
+X
+(app/src/main/res/layout/article_item.xml,6\6\66d0c192883781aad2c16ae61d388184b037da03
+c
+3app/src/main/java/com/example/wine/NewsAdapter.java,7\9\7922225652d2da78a38d4056d73d22f0ccea2a5b
+`
+0app/src/main/res/layout/activity_news_detail.xml,0\1\01f9a050c4f183740197f54c2d52a75340ba6b53
+c
+3app/src/main/res/layout/activity_article_detail.xml,c\9\c938e1a4bd8338895915dd56d879efcd4cb6f3d9
+d
+4app/src/main/java/com/example/wine/Bean/NewBean.java,2\a\2a2d7036e8ddecce2342250c7c1499b4e088851e
+j
+:app/src/main/java/com/example/wine/Bean/Favorite_item.java,0\4\047fec67eeac5e9efa39ca263b8014bf32b167ac
+f
+6app/src/main/java/com/example/wine/HistoryAdapter.java,9\5\951bc438147ead96ad391b268ca437a504e78c19
+j
+:app/src/main/java/com/example/wine/NewsDetailActivity.java,b\2\b2df8c1a155834fea7dec09fce4cfbd4c101db97
+a
+1app/src/main/java/com/example/wine/Util/Util.java,f\c\fc545948210b01adeb1fc89249d3a0da4dd3c304
+l
+<app/src/main/java/com/example/wine/Util/DataRequestUtil.java,c\f\cfa0021349df090fa3bae2eb3304c8e0615f4f03

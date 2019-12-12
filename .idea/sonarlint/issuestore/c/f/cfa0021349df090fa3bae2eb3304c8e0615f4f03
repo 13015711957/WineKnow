@@ -1,0 +1,13 @@
+
+psquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°®ğ…8õÄÇ˜ï-
+ssquid:UselessImportCheck	"CRemove this unused import 'com.example.wine.ArticleDetailActivity'.(³ø«üÿÿÿÿ8åµç”ï-
+nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(áÉÌ´ÿÿÿÿÿ8‰ƒâ¦ï-
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ğ©‰íûÿÿÿÿ8æìª”ï-
+?squid:S16438"Use a StringBuilder instead.(æãÛÂúÿÿÿÿ8Ú¿ô¨ï-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñÕæ¥şÿÿÿÿ
+wsquid:S2293h"YReplace the type specification in this constructor call with the diamond operator ("<>").(å°ò8çÿÊ˜ï-
+\squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(‡ÊÍÆ8åµç”ï-
+nsquid:CommentedOutCodeLinev"<This block of commented-out lines of code should be removed.(ª²ß€úÿÿÿÿ8é¹Æ˜ï-
+Wsquid:S1118":Add a private constructor to hide the implicit public one.(ìæ¶8é¹Æ˜ï-
+Isquid:S00108„")Either remove or fill this block of code.(ï­£Ä8é¹Æ˜ï-
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¾£òªûÿÿÿÿ8ÕÁ”ï-

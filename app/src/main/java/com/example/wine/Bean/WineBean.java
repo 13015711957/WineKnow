@@ -9,6 +9,20 @@ public class WineBean implements Serializable {
     private String price;
     private String infor;
     private String imgurl;
+    private int flag;
+
+
+    public WineBean() {
+        this.flag = 0;
+    }
+
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
+    }
 
     public void WineBean() {
     }
@@ -70,6 +84,7 @@ public class WineBean implements Serializable {
                 ", price='" + price + '\'' +
                 ", infor='" + infor + '\'' +
                 ", imgurl='" + imgurl + '\'' +
+                ", flag=" + flag +
                 '}';
     }
 }

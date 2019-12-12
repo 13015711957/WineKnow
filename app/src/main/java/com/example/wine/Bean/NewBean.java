@@ -1,13 +1,25 @@
 package com.example.wine.Bean;
 
-public class NewBean {
+import java.io.Serializable;
+
+public class NewBean implements Serializable {
     private String title;
     private String type;
     private String time;
     private String content;
     private String imgurl;
     private String url;
+    private int flag;
     public NewBean() {
+        this.flag=0;
+    }
+
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
     }
 
     public NewBean(String title, String type, String time, String content, String imgurl, String url) {
@@ -76,6 +88,7 @@ public class NewBean {
                 ", content='" + content + '\'' +
                 ", imgurl='" + imgurl + '\'' +
                 ", url='" + url + '\'' +
+                ", flag=" + flag +
                 '}';
     }
 }

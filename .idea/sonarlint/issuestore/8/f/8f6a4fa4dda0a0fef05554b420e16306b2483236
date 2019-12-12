@@ -1,3 +1,9 @@
 
-|squid:S1450"`Remove the "FeedbackViewModel" field and declare it as a local variable in the relevant methods.(¦ªÈáüÿÿÿÿ
-ysquid:S00116"\Rename this field "FeedbackViewModel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ªÈáüÿÿÿÿ
+€squid:S1450"bRemove the "mSendFeedBackButton" field and declare it as a local variable in the relevant methods.(ÉÓ ÷8™¼Ñï-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8›²»Ñï-
+ysquid:S00116"\Rename this field "FeedbackViewModel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ªÈáüÿÿÿÿ
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8›²»Ñï-
+dsquid:UselessImportCheck
+"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8›²»Ñï-
+|squid:S1450"`Remove the "FeedbackViewModel" field and declare it as a local variable in the relevant methods.(¦ªÈáüÿÿÿÿ
+Xsquid:S1068"5Remove this unused "FeedbackViewModel" private field.(¦ªÈáüÿÿÿÿ8›²»Ñï-

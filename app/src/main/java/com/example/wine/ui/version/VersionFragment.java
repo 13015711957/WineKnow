@@ -23,13 +23,6 @@ public class VersionFragment extends Fragment {
         versionViewModel =
                 ViewModelProviders.of(this).get(VersionViewModel.class);
         View root = inflater.inflate(R.layout.fragment_version, container, false);
-        final TextView textView = root.findViewById(R.id.text_version);
-        versionViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }

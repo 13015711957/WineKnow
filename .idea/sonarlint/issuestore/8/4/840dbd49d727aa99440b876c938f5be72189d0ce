@@ -1,8 +1,11 @@
 
-jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ÿí¶ßÿÿÿÿÿ
-osquid:S1450"XRemove the "imageView" field and declare it as a local variable in the relevant methods.(øû¯
-ksquid:S1450"TRemove the "infor" field and declare it as a local variable in the relevant methods.(¸ÌÄ×
-osquid:S1450"SRemove the "wine" field and declare it as a local variable in the relevant methods.(óä¥àÿÿÿÿÿ
-jsquid:S1450"SRemove the "type" field and declare it as a local variable in the relevant methods.(¯ò»
-osquid:S1450"SRemove the "name" field and declare it as a local variable in the relevant methods.(©ÏßŽûÿÿÿÿ
-ksquid:S1450"TRemove the "price" field and declare it as a local variable in the relevant methods.(šØ‘Û
+ksquid:S1450"TRemove the "infor" field and declare it as a local variable in the relevant methods.(¸ÌÄ×
+osquid:S1450"XRemove the "imageView" field and declare it as a local variable in the relevant methods.(øû¯
+osquid:S1450"SRemove the "name" field and declare it as a local variable in the relevant methods.(©ÏßŽûÿÿÿÿ
+nsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(øÛŸùÿÿÿÿ8ãÄ¾Ìï-
+jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ÿí¶ßÿÿÿÿÿ
+jsquid:S1450"SRemove the "type" field and declare it as a local variable in the relevant methods.(¯ò»
+nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(‡›÷ôüÿÿÿÿ8‘îÏÌï-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òžýÿÿÿÿ8 ì¸¬ï-
+ssquid:UselessImportCheck"HRemove this unused import 'android.text.method.ScrollingMovementMethod'.(Û™ê¡8°‰ŸŸï-
+ksquid:S1450"TRemove the "price" field and declare it as a local variable in the relevant methods.(šØ‘Û

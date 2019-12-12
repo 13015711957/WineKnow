@@ -1,7 +1,14 @@
 
-|squid:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãÝòùúÿÿÿÿ8‘©Œ€ï-
-|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ð©‰íûÿÿÿÿ8ä¤ˆ€ï-
+ksquid:UselessImportCheck";Remove this unused import 'com.example.wine.Bean.WineBean'.(×âµ„ûÿÿÿÿ8Ý“À”ï-
+lsquid:MaximumInheritanceDepth%"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž8üËî-
+ssquid:UselessImportCheck"CRemove this unused import 'android.database.sqlite.SQLiteDatabase'.(ãµèÈùÿÿÿÿ8…ë¶”ï-
+esquid:UselessImportCheck":Remove this unused import 'android.content.ContentValues'.(å’µÞ8…ë¶”ï-
+qsquid:UselessImportCheck"ARemove this unused import 'com.example.wine.Util.DatabaseHelper'.(•‘û­øÿÿÿÿ8…ë¶”ï-
+{squid:S1450("]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8üËî-
 Rsquid:S1905U"/Remove this unnecessary cast to "DrawerLayout".(ÐÍè¨þÿÿÿÿ8¾’¡þî-
+\squid:UselessImportCheck",Remove this unused import 'org.jsoup.Jsoup'.(Ù±šªûÿÿÿÿ8…ë¶”ï-
+`squid:UselessImportCheck "5Remove this unused import 'org.jsoup.nodes.Document'.(ôž¯É8…ë¶”ï-
+[squid:UselessImportCheck#"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Ý“À”ï-
 rsquid:UselessImportCheck"BRemove this unused import 'androidx.fragment.app.FragmentManager'.(¯­ë‹ýÿÿÿÿ8ã£Š€ï-
-lsquid:MaximumInheritanceDepth$"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž8üËî-
-{squid:S1450'"]Remove the "mTabRadioGroup" field and declare it as a local variable in the relevant methods.(§£ù8üËî-
+asquid:UselessImportCheck!"6Remove this unused import 'org.jsoup.select.Elements'.(ëÂè8…ë¶”ï-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Ñˆ·”ï-

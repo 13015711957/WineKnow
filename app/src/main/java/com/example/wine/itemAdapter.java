@@ -21,6 +21,7 @@ public class itemAdapter extends BaseAdapter {
         this.context=context;
         this.list=list;
     }
+
     @Override
     public int getCount() {
         return list.size();
@@ -35,6 +36,12 @@ public class itemAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
+
+    public void removeAllItem(int size){
+        list.clear();
+        notifyDataSetChanged();
+    }
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

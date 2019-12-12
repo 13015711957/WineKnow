@@ -1,4 +1,6 @@
 
-Lsquid:S1068"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ
-wsquid:S1450"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ
-wsquid:S14888"`Immediately return this expression instead of assigning it to the temporary variable "rootView".(â†ÙÌ
+Msquid:EmptyStatementUsageCheckz"Remove this empty statement.(óü”°8ŞÈİšï-
+|squid:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šƒí´ùÿÿÿÿ8š×Şšï-
+~squid:S1450%"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ8š×Şšï-
+Ssquid:S1068%"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8š×Şšï-
+Msquid:S00108j")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8ŞÈİšï-

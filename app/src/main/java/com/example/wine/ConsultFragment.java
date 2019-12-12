@@ -17,8 +17,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.wine.Bean.NewBean;
 import com.example.wine.Util.DatabaseHelper;
+import com.example.wine.Util.Util;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
@@ -74,7 +77,24 @@ public class ConsultFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent=new Intent(getContext(),NewsDetailActivity.class);
                 NewBean newBean=NewsAdapter.list.get(i);
-                intent.putExtra("url",newBean.getUrl());
+
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// HH:mm:ss
+                Date date = new Date(System.currentTimeMillis());
+                Util.insert_History(newBean.getTitle(),newBean.getTime(),simpleDateFormat.format(date),1,getContext());
+
+                try {
+                    DatabaseHelper dbHelper = new DatabaseHelper(getContext(), "test.db",null,1);
+                    SQLiteDatabase db = dbHelper.getReadableDatabase();
+                    Cursor cursor = db.query("News", null, "time=?", new String[]{newBean.getTime()}, null, null, null, null);
+                    while (cursor.moveToNext())
+                    {
+                        int x=cursor.getInt(cursor.getColumnIndex("flag"));
+                        newBean.setFlag(x);
+                    }
+                }catch (Exception e){
+                    Log.e("<<<<<<<","error");
+                }
+                intent.putExtra("newBean",newBean);
                 startActivity(intent);
                 Log.e("news",newBean.toString());
             }
@@ -96,6 +116,7 @@ public class ConsultFragment extends Fragment {
                 {
                     do {
                         NewBean newBean=new NewBean();
+                        newBean.setFlag(cursor.getInt(cursor.getColumnIndex("flag")));
                         newBean.setTitle(cursor.getString(cursor.getColumnIndex("title")));
                         newBean.setType(cursor.getString(cursor.getColumnIndex("type")));
                         newBean.setTime(cursor.getString(cursor.getColumnIndex("time"))); ;

@@ -2,8 +2,8 @@
     <string name="app_name">酒知道</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">酒知道</string>
+    <string name="nav_header_subtitle">我太难了，只能写成这样了</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">设置</string>
 

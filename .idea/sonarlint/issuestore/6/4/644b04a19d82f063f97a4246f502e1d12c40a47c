@@ -1,2 +1,7 @@
 
 vsquid:S1450"_Remove the "versionViewModel" field and declare it as a local variable in the relevant methods.(Œâ§
+squid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "root".(½à¦šşÿÿÿÿ8±¬ÜÑï-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.Observer'.(ÒÁˆÉşÿÿÿÿ8±¬ÜÑï-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8±¬ÜÑï-
+dsquid:UselessImportCheck	"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8±¬ÜÑï-
+Rsquid:S1068"4Remove this unused "versionViewModel" private field.(Œâ§8±¬ÜÑï-

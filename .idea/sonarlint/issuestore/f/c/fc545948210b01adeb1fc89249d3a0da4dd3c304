@@ -1,0 +1,17 @@
+
+ksquid:UselessImportCheck"@Remove this unused import 'com.example.wine.Bean.Favorite_item'.(¶˜•©8²ğÎï-
+Hsquid:S00108:")Either remove or fill this block of code.(”ı¾8ªêÊÌï-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(×¼­Æ8±í°Çï-
+msquid:S00100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß•‰«8Á‚’Ëï-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñÕæ¥şÿÿÿÿ
+msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óæµ×8°¾ÃÇï-
+fsquid:S1192"HDefine a constant instead of duplicating this literal "test.db" 8 times.(‹Ä©Å8”ßÓÊï-
+dsquid:S1192""FDefine a constant instead of duplicating this literal "title" 3 times.(˜õÍ¯8î‡ıÎï-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞôÃÈùÿÿÿÿ8”ÓÊï-
+rsquid:S00100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿õí†ÿÿÿÿÿ8¨üùÎï-
+Hsquid:S00108&")Either remove or fill this block of code.(”ı¾8·‰ÊÌï-
+msquid:S00100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šªç·8ºËéÎï-
+rsquid:S00100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÉúÚùÿÿÿÿ8·ÆŠËï-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òî½ışÿÿÿÿ8ÌëÃÇï-
+msquid:S001000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£À©Ù8Ş™ÛÊï-
+Msquid:EmptyStatementUsageCheckh"Remove this empty statement.(óü”°8î‡ıÎï-

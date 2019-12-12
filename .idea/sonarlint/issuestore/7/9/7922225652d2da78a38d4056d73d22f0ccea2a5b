@@ -1,0 +1,10 @@
+
+Hsquid:S1444"*Make this "public static list" field final(±ä–µ8ä‡è•ï-
+squid:S1319"oThe type of the "list" object should be an interface such as "List" rather than the implementation "ArrayList".(±ä–µ8ä‡è•ï-
+…"squid:ClassVariableVisibilityCheck"PMake list a static final constant or non-public and provide accessors if needed.(±ä–µ8ä‡è•ï-
+?squid:S3010"!Remove this assignment of "list".(Ù€ıÁ8ä‡è•ï-
+=squid:S2386"Make member "list" "protected".(Ù€ıÁ8ä‡è•ï-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Ãİ±¢ï-
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8­”¨Èï-
+Msquid:S00108@")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8õæ§Èï-
+Ssquid:S2209"5Change this instance-reference to a static reference.(Ù€ıÁ8ä‡è•ï-

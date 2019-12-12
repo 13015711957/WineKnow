@@ -29,8 +29,12 @@
             android:iconifiedByDefault="false"
 
             android:queryHint="搜索内容" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_load_search"
+            ></ListView>
 
-        <include layout="@layout/fragment_know"></include>
     </LinearLayout>
 
 

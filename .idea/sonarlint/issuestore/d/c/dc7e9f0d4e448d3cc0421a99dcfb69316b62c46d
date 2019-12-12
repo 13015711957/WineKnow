@@ -1,4 +1,8 @@
 
-Ssquid:S1068"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8Î¯ƒî-
-~squid:S1450"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ8Î¯ƒî-
-ƒsquid:S14888"`Immediately return this expression instead of assigning it to the temporary variable "rootView".(½Û—ùÿÿÿÿ8Î¯ƒî-
+osquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(ª²ß€úÿÿÿÿ8ƒã Îï-
+Msquid:S00108k")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8èÿ…–ï-
+~squid:S1450&"[Remove the "mContentText" field and declare it as a local variable in the relevant methods.(¯š„ıÿÿÿÿ8èÿ…–ï-
+Msquid:EmptyStatementUsageCheck{"Remove this empty statement.(óü”°8èÿ…–ï-
+|squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šƒí´ùÿÿÿÿ8èÿ…–ï-
+ksquid:UselessImportCheck";Remove this unused import 'com.example.wine.Bean.WineBean'.(×âµ„ûÿÿÿÿ8â£–ï-
+Ssquid:S1068&"0Remove this unused "mContentText" private field.(¯š„ıÿÿÿÿ8èÿ…–ï-
